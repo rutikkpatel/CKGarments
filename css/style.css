@@ -1,0 +1,249 @@
+*{
+    padding: 0; margin: 0;
+}
+:root{
+    --navbar-height: 59px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation Menu or Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+/* Styling Main Logo */
+
+.logo{
+    margin: 10px 30px;
+
+}
+.logo img{
+    border-radius: 50%;
+    /* border: 2px dotted red; */
+    height: 40px;
+    margin: 1px 15px;
+}
+
+/* Styling Navigation Menu */
+#navbar ul{
+    display: flex;
+    font-family: cursive;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a{
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    display: block;
+    padding: 2px 22px;
+    text-decoration: none;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    background-color: chartreuse;
+}
+
+/*  Styling Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 200px;
+    height: 378px;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: url(../images/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 73%;
+    z-index: -1;
+    opacity: 0.7;
+}
+.h-main{
+    font-size: 3rem;
+    padding: 12px;
+    margin-top: 2%;
+    font-family: monospace;
+}
+#home h1{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-family: monospace;
+}
+
+#home h2{
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    text-shadow: 1px 1px 2px black;
+    font-family: monospace;
+}
+
+.btn{
+    padding: 6px 25px;
+    margin: 17px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    background-color: #e64f37;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+.btn:hover{
+    color: black;
+    border-color: #000000;
+    background-color:rgba(0, 255, 0, 0.7);
+    box-shadow: 2px 2px 15px #006500;
+}
+
+/* Utility Classes */
+.main{
+    font-size: 3rem;
+    padding: 12px;
+    margin-top: 2%;
+    font-family: monospace;
+    background-color: aliceblue;
+}
+.secondary{
+    font-size: 2rem;
+    padding: 12px;
+    font-family: monospace;
+}
+.center{
+    text-align: center;
+}
+
+/* Styling Services */
+
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid red;
+    padding: 20px;
+    margin: 2px 28px;
+    border-radius: 10%;
+    background-color: antiquewhite;
+    background-color: beige;
+}
+
+#services .box img{
+    height: 160px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: cursive;
+}
+
+/* Styling Customer Section */
+
+#customer-section{
+    height: 275px;
+    margin-bottom: 13%;
+}
+
+#customers::before{
+    content: "";
+    position: absolute;
+    background: url(../images/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 45%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#customers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+}
+.customer-details{
+    padding: 37px;
+}
+#customers img{
+    height: 130px;
+}
+
+/* Styling Contact Section */
+
+#contact{
+    position: relative;
+    margin-top: 10%;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 34px;
+}
+#contact-box::before{
+    content: "";
+    position: absolute;
+    background-image: url(../images/bgimg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 2%;
+    width: 100%;
+    height: 76%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#contact-box input,textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 0px;
+    font-size: 1rem;
+}
+#contact-box form{
+    width: 40%;
+    margin-bottom: 6%;
+}
+
+#contact-box label{
+    font-size: 1.5rem;
+    font-family: monospace;
+}
+
+/* Styling Footer */
+footer{
+    background: black;
+    color: white;
+    padding: 5px;
+}
+
